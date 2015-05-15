@@ -1037,6 +1037,38 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
 }
 
+/* immagine circolare a corredo dei post nell'index*/
+
+.post-circle-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    float: left;
+    top: 0px;
+    left: 0%;
+    margin-left: -40px;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+
+.post-circle-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post
@@ -1773,7 +1805,7 @@ body:not(.post-template) .post-title {
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
-        border-width: 0;
+        border-color: transparent;
         color: #2e2e2e;
         background: transparent;
     }
@@ -1995,6 +2027,39 @@ body:not(.post-template) .post-title {
     .read-next .post {
         width: 100%;
     }
+    
+    /* immagini dei post nelle liste in versione smartphone */
+    .post-circle-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    float: right;
+    top: 0px;
+    left: 0%;
+    margin-left: 0px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+
+.post-circle-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+
 
 }
 
